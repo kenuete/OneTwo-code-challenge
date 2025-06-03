@@ -1,0 +1,35 @@
+{
+  "name": "onetwo-code-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write src",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenuete/OneTwo-code-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenuete/OneTwo-code-challenge/issues"
+  },
+  "homepage": "https://github.com/kenuete/OneTwo-code-challenge#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.29",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
