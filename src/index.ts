@@ -1,5 +1,12 @@
-export function add(a: number, b: number): number {
-    return a + b;
-}
+import * as readline from 'readline'
+import { expandString } from './util/utils'
 
-console.log(add(1,2))
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+})
+
+rl.question('Enter the string: ', (inputStr) => {
+    console.log(expandString(inputStr))
+    rl.close()
+})
